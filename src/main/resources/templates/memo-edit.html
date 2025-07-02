@@ -9,6 +9,7 @@
     <link rel="stylesheet" th:href="@{/styles.css}"/>
 </head>
 <body>
+<div class="add-form">
     <h1>메모 수정</h1>
     <form th:action="@{/edit}" method="post">
         <input hidden="hidden" name="id" th:value="${memo.id}" />
@@ -19,5 +20,6 @@
         <button type="submit">수정 완료</button>
         <a href="/" class="cancle">취소</a>
     </form>
+</div>
 </body>
 </html>
